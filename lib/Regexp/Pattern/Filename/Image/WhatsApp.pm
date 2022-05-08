@@ -1,16 +1,14 @@
 package Regexp::Pattern::Filename::Image::WhatsApp;
 
-# AUTHORITY
-# DATE
-# DIST
-# VERSION
-
 use 5.010001;
 use strict;
 use warnings;
 #use utf8;
 
-use Filename::Image ();
+# AUTHORITY
+# DATE
+# DIST
+# VERSION
 
 our %RE;
 
@@ -25,7 +23,7 @@ $RE{filename_image_whatsapp} = {
 };
 
 1;
-# ABSTRACT:
+# ABSTRACT: Image filename saved by WhatsApp
 
 =head1 DESCRIPTION
 
