@@ -17,6 +17,7 @@ $RE{filename_image_whatsapp} = {
     pat => qr/\AIMG-[0-9]{8}-WA[0-9]{4,}\.(?:JPG|jpg)\z/,
     examples => [
         {str=>'foo.jpg', matches=>0, summary=>'No pattern'},
+        {str=>'VID-20210922-WA0001.mp4', matches=>0, summary=>'Video, not image'},
         {str=>'IMG-20210922-WA0001.jpg', matches=>1},
         {str=>'IMG-20210922-WA0001.txt', matches=>0, summary=>'Wrong extension'},
     ],
