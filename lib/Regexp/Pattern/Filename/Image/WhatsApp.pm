@@ -14,12 +14,13 @@ our %RE;
 
 $RE{filename_image_whatsapp} = {
     summary => 'Image filename saved by WhatsApp',
-    pat => qr/\AIMG-[0-9]{8}-WA[0-9]{4,}\.(?:JPG|jpg)\z/,
+    pat => qr/\AIMG-[0-9]{8}-WA[0-9]{4,}\.(?:JPE?G|jpe?g)\z/,
     tags => ['anchored'],
     examples => [
         {str=>'foo.jpg', matches=>0, summary=>'No pattern'},
         {str=>'VID-20210922-WA0001.mp4', matches=>0, summary=>'Video, not image'},
         {str=>'IMG-20210922-WA0001.jpg', matches=>1},
+        {str=>'IMG-20210922-WA0001.jpeg', matches=>1},
         {str=>'IMG-20210922-WA0001.txt', matches=>0, summary=>'Wrong extension'},
     ],
 };
